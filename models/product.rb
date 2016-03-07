@@ -10,7 +10,7 @@ class Product
   end
 
   def read_product_info
-    puts "#{title} + currently costs + #{cost}"
+    "#{title} currently costs #{cost}"
   end
 
   def add_review(review)
@@ -20,7 +20,7 @@ class Product
   def read_reviews
     if @reviews.length > 10
       @reliability = "strong"
-    elseif @reviews.length > 5
+    elsif @reviews.length > 5
       @reliability = "okay"
     else
       @reliability = "weak"
