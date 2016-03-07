@@ -10,7 +10,7 @@ describe Product do
   it "has a String for a title" do
     expect(product.title).to be_a(String)
   end
-  it "has has a price as an Integer" do
+  it "has contains a price that is an Integer" do
     expect(product.cost).to eq(1200)
   end
   it "contains a list of reviews" do
